@@ -1,2 +1,20 @@
 <header class="header">
+  <div class="header__container">
+    <div class="header__wrapper">
+      <img src="@img/logo.svg" alt="логотип: токен добра" class="logo header__logo">
+      <div class="header__body">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a href="#!" class="header__item-link">Зачем это все</a></li>
+            <li class="header__item"><a href="#!" class="header__item-link">Что такое pre-NFT</a></li>
+            <li class="header__item"><a href="#!" class="header__item-link">FAQ</a></li>
+          </ul>
+        </nav>
+        @@include('../btn/btn.html', {"text": "Расскажите о нас", "class": "header__btn"})
+      </div>
+      <button type="button" class="burger" id="burger">
+        <img src="@img/burger.svg" alt="">
+      </button>
+    </div>
+  </div>
 </header>

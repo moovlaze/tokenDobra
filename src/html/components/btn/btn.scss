@@ -1,0 +1,17 @@
+.btn {
+	padding: 14px 30px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 27px;
+	border: 2px solid $color-black;
+	border-radius: 11px;
+	color: $color-black;
+	background-color: transparent;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $color-grey;
+	}
+}

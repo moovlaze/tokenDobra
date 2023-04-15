@@ -1,0 +1,38 @@
+.tooltip-btn {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 5px 11px;
+	border-radius: 21px;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(2px);
+	cursor: pointer;
+}
+
+.tippy-box[data-theme~="default"] {
+	font-family: $font-family;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	color: $color-white;
+	background: #0c0c0c;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35);
+	border-radius: 11px;
+}
+
+.tippy-box[data-theme~="default"][data-placement^="top"]
+	> .tippy-arrow::before {
+	border-top-color: $color-black;
+}
+.tippy-box[data-theme~="default"][data-placement^="bottom"]
+	> .tippy-arrow::before {
+	border-bottom-color: $color-black;
+}
+.tippy-box[data-theme~="default"][data-placement^="left"]
+	> .tippy-arrow::before {
+	border-left-color: $color-black;
+}
+.tippy-box[data-theme~="default"][data-placement^="right"]
+	> .tippy-arrow::before {
+	border-right-color: $color-black;
+}

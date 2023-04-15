@@ -1,0 +1,18 @@
+.works {
+	margin-top: 90px;
+	@media (max-width: 767.98px) {
+		margin-top: 30px;
+	}
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+		gap: 40px;
+		@media (max-width: 576.98px) {
+			gap: 15px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 30px;
+	}
+}

@@ -1,0 +1,73 @@
+.tutor {
+	margin-top: 50px;
+	@media (max-width: 767.98px) {
+		margin-top: 30px;
+	}
+	&__container {
+		@media (max-width: 767.98px) {
+			padding: 0;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		padding: 95px 20px;
+		background: #ffe500;
+		border-radius: 20px;
+		@media (max-width: 767.98px) {
+			flex-wrap: wrap;
+			padding: 30px 15px;
+			border-radius: 0;
+		}
+		@media (max-width: 576.98px) {
+			gap: 30px;
+		}
+	}
+
+	&__pic {
+		flex: 0 0 380px;
+		@media (max-width: 991.98px) {
+			flex: 0 1 380px;
+		}
+		@media (max-width: 576.98px) {
+			flex: 0 1 250px;
+		}
+	}
+
+	&__info {
+		flex: 0 1 785px;
+		padding-right: 60px;
+		@media (max-width: 991.98px) {
+			padding-right: 0;
+			flex: 0 3 785px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 105.9%;
+		color: $color-black;
+		@media (max-width: 576.98px) {
+			font-size: 25px;
+			line-height: 30px;
+			color: $color-black;
+		}
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+		color: $color-black;
+		@media (max-width: 576.98px) {
+			font-size: 16px;
+			line-height: 24px;
+			color: $color-black;
+		}
+	}
+}

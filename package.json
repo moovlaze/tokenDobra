@@ -43,6 +43,7 @@
 		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
+		"swiper": "^9.2.2",
 		"tippy.js": "^6.3.7"
 	}
 }

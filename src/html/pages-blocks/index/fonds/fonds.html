@@ -1,0 +1,71 @@
+<section class="fonds">
+  <div class="fonds__container">
+    <h2 class="fonds__title title-section">Фонды</h2>
+    <div class="fonds__row row-fonds">
+      <img src="@img/fonds/bg-1.jpg" alt="" class="row-fonds__bg">
+      <div class="row-fonds__desc">
+        <a href="#!" class="row-fonds__pic">
+          <img src="@img/fonds/avatar.png" alt="аватарка фонда">
+        </a>
+        <div class="row-fonds__box">
+          <h3 class="row-fonds__title">
+            <a href="#!" class="row-fonds__title-link">Журавлик</a>
+          </h3>
+          <span class="row-fonds__count">10 картин | 10 000 NFT</span>
+        </div>
+        <p class="row-fonds__text">Какой-то рассказ о фонде рассказ о фонде рассказ о фонде рассказ о фонде рассказ о
+          фонде рассказ о фонде рассказ о фонде рассказ. <a href="#!" class="row-fonds__text-link">Подробнее</a></p>
+      </div>
+      <div class="row-fonds__slider swiper">
+        <div class="row-fonds__wrapper swiper-wrapper">
+          <div class="swiper-slide">
+            @@include('../../../components/article-row-fonds/article-row-fonds.html', {'class': 'row-fonds__article',
+            'image': '@img/article-row-fonds/01.jpg'})
+          </div>
+          <div class="swiper-slide">
+            @@include('../../../components/article-row-fonds/article-row-fonds.html', {'class': 'row-fonds__article',
+            'image': '@img/article-row-fonds/03.jpg'})
+          </div>
+          <div class="swiper-slide">
+            @@include('../../../components/article-row-fonds/article-row-fonds.html', {'class': 'row-fonds__article',
+            'image': '@img/article-row-fonds/02.jpg'})
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+    <div class="fonds__row row-fonds">
+      <img src="@img/fonds/bg-2.jpg" alt="" class="row-fonds__bg">
+      <div class="row-fonds__desc">
+        <a href="#!" class="row-fonds__pic">
+          <img src="@img/fonds/avatar.png" alt="аватарка фонда">
+        </a>
+        <div class="row-fonds__box">
+          <h3 class="row-fonds__title">
+            <a href="#!" class="row-fonds__title-link">Красный Перечный Кот</a>
+          </h3>
+          <span class="row-fonds__count">10 картин | 10 000 NFT</span>
+        </div>
+        <p class="row-fonds__text">Какой-то рассказ о фонде рассказ о фонде рассказ о фонде. <a href="#!"
+            class="row-fonds__text-link">Подробнее</a></p>
+      </div>
+      <div class="row-fonds__slider swiper">
+        <div class="row-fonds__wrapper swiper-wrapper">
+          <div class="swiper-slide">
+            @@include('../../../components/article-row-fonds/article-row-fonds.html', {'class': 'row-fonds__article',
+            'image': '@img/article-row-fonds/03.jpg'})
+          </div>
+          <div class="swiper-slide">
+            @@include('../../../components/article-row-fonds/article-row-fonds.html', {'class': 'row-fonds__article',
+            'image': '@img/article-row-fonds/04.jpg'})
+          </div>
+          <div class="swiper-slide">
+            @@include('../../../components/article-row-fonds/article-row-fonds.html', {'class': 'row-fonds__article',
+            'image': '@img/article-row-fonds/05.jpg'})
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </div>
+</section>

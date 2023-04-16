@@ -68,3 +68,8 @@ li {
 	padding: 0 15px;
 	margin: 0 auto;
 }
+
+.visually-hidden {
+	position: fixed;
+	transform: scale(0);
+}

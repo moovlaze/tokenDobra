@@ -6,11 +6,13 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item"><a href="#!" class="header__item-link">Зачем это все</a></li>
-            <li class="header__item"><a href="#!" class="header__item-link">Что такое pre-NFT</a></li>
-            <li class="header__item"><a href="#!" class="header__item-link">FAQ</a></li>
+            <li class="header__item"><a href="#!" class="header__item-link" data-scroll-btn="tutor">Что такое
+                pre-NFT</a></li>
+            <li class="header__item"><a href="#!" class="header__item-link" data-scroll-btn="faq">FAQ</a></li>
           </ul>
         </nav>
-        @@include('../btn/btn.html', {"text": "Расскажите о нас", "class": "header__btn"})
+        @@include('../btn/btn.html', {"text": "Расскажите о нас", "class": "header__btn", "attr":
+        'data-modal-btn="modal-share"'})
       </div>
       <button type="button" class="burger" id="burger">
         <img src="@img/burger.svg" alt="">

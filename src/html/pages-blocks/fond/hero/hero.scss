@@ -25,6 +25,9 @@
 		max-width: 560px;
 		transform: translateY(50px);
 		color: $color-white;
+		@media (max-width: 576.98px) {
+			transform: translateY(30px);
+		}
 	}
 
 	&__pic {

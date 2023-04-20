@@ -1,0 +1,22 @@
+.description {
+	margin-top: 60px;
+	@media (max-width: 576.98px) {
+		margin-top: 80px;
+	}
+	&__container {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__text {
+		max-width: 771px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 27px;
+		color: $color-black;
+		@media (max-width: 576.98px) {
+			font-size: 14px;
+			line-height: 21px;
+		}
+	}
+}

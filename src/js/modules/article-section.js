@@ -1,9 +1,9 @@
-export default () => {
-	const articleWorksAll = document.querySelectorAll(".article-works");
+export default ({ quantity, selector, breakpoint = 992 }) => {
+	const elems = document.querySelectorAll(selector);
 
-	if (window.innerWidth < 992) {
-		articleWorksAll.forEach((article, index) => {
-			if (index > 4) {
+	if (window.innerWidth < breakpoint) {
+		elems.forEach((article, index) => {
+			if (index > quantity) {
 				article.remove();
 			}
 		});

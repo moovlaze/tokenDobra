@@ -8,7 +8,15 @@ import scrollToSection from "./modules/scrollToSection.js";
 import copy from "./modules/copy.js";
 
 burger();
-articleSection();
+articleSection({
+	quantity: 4,
+	selector: ".works__article",
+});
+articleSection({
+	quantity: 6,
+	selector: ".products__article",
+	breakpoint: 768,
+});
 tooltip();
 slider();
 accordion();

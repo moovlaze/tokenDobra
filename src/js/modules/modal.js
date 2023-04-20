@@ -2,6 +2,13 @@ export default () => {
 	const page = document.body;
 	const btns = document.querySelectorAll("[data-modal-btn]");
 	const modals = document.querySelectorAll("[data-modal]");
+	const headerBody = document.querySelector(".header__body");
+
+	const checkHeaderBody = () => {
+		if (headerBody.classList.contains("open")) {
+			return true;
+		}
+	};
 
 	const handleModal = ({ target }, modal) => {
 		if (
@@ -9,7 +16,10 @@ export default () => {
 			target.classList.contains("modal__close")
 		) {
 			modal.classList.remove("open");
-			page.classList.remove("page_lock");
+
+			if (!checkHeaderBody()) {
+				page.classList.remove("page_lock");
+			}
 		}
 	};
 
@@ -24,6 +34,9 @@ export default () => {
 
 			modal.classList.add("open");
 			page.classList.add("page_lock");
+			if (!checkHeaderBody()) {
+				page.classList.add("page_lock");
+			}
 
 			modal.addEventListener("click", ({ target }) => {
 				handleModal({ target }, modal);
@@ -32,7 +45,9 @@ export default () => {
 			window.addEventListener("keydown", (e) => {
 				if (e.key === "Escape") {
 					modal.classList.remove("open");
-					page.classList.remove("page_lock");
+					if (!checkHeaderBody()) {
+						page.classList.remove("page_lock");
+					}
 				}
 			});
 		});

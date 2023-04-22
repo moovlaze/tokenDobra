@@ -1,6 +1,9 @@
 .card-picture {
+	margin-top: 73px;
 	background: #f4f4f4;
-
+	@media (max-width: 767.98px) {
+		margin-top: 45px;
+	}
 	&__wrapper {
 		padding: 60px 0;
 		display: flex;

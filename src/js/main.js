@@ -6,6 +6,7 @@ import accordion from "./modules/accordion.js";
 import modal from "./modules/modal.js";
 import scrollToSection from "./modules/scrollToSection.js";
 import copy from "./modules/copy.js";
+import inputNumber from "./modules/inputNumber.js";
 
 burger();
 articleSection({
@@ -23,3 +24,4 @@ accordion();
 modal();
 scrollToSection();
 copy();
+inputNumber();

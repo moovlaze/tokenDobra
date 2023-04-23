@@ -1,4 +1,5 @@
 export default () => {
+	const headerHeight = document.querySelector(".header").clientHeight;
 	const btns = document.querySelectorAll("[data-scroll-btn]");
 	const sections = document.querySelectorAll("[data-scroll-section]");
 
@@ -12,9 +13,10 @@ export default () => {
 				`[data-scroll-section='${btn.dataset.scrollBtn}']`
 			);
 
-			currentSection.scrollIntoView({
+			window.scroll({
+				left: 0,
+				top: currentSection.offsetTop - headerHeight,
 				behavior: "smooth",
-				block: "start",
 			});
 		});
 	});

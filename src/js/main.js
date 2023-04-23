@@ -7,6 +7,7 @@ import modal from "./modules/modal.js";
 import scrollToSection from "./modules/scrollToSection.js";
 import copy from "./modules/copy.js";
 import inputNumber from "./modules/inputNumber.js";
+import headerScroll from "./modules/header-scroll.js";
 
 burger();
 articleSection({
@@ -25,3 +26,4 @@ modal();
 scrollToSection();
 copy();
 inputNumber();
+headerScroll();
